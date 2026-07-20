@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Button DOM Calculator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="app3.js" defer></script>
+</head>
+<style>
+     body {
+            background-color: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0.1);
+        }
+        
+        
+</style>
+<body class="bg-light d-flex align-items-center justify-content-center min-vh-100">
+
+    <!-- Centered Card Container -->
+    <div class="container" style="max-width: 400px;">
+
+        <div class="card shadow p-4 text-center">
+            
+            <h3s class="mb-sm-4 text-dark fs-2" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Multi-Button Calculator</h3s>
+                
+            <!-- Input fields for the numbers -->
+            <div class="mb-3">
+                <input id="num1" class="form-control text-center mb-2 fs-5 fw-semibold" placeholder="First Number...">
+                <input id="num2" class="form-control text-center fs-5 fw-semibold" placeholder="Second Number...">
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="d-flex flex-wrap gap-1 justify-content-center mb-3">
+                <button id="addBtn" class="btn btn-outline-success flex-grow-1"><strong>Add (+)</strong></button>
+                <button id="subBtn" class="btn btn-outline-success flex-grow-1"><strong>Subtract (-)</strong></button>
+                <button id="mulBtn" class="btn btn-outline-success flex-grow-1"><strong>Multiply (x)</strong></button>
+                <button id="divBtn" class="btn btn-outline-success flex-grow-1"><strong>Divide (÷)</strong></button>
+            </div>
+            
+            <!-- Clear Button spans full width -->
+            <button id="clearBtn" class="btn btn-outline-danger w-100 mb-3 fw-bolder">Clear</button>
+
+            <!-- Display area for the result -->
+            <div class="alert alert-info py-2 m-0" role="alert">
+                <p id="resultText" class="fw-bold m-0 fs-4">Result: </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Duplicate script tag removed from here as it is already in the <head> with defer -->
+</body>
+</html>
